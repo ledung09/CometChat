@@ -7,20 +7,21 @@ import {
   RouterProvider} from "react-router-dom";
 import Home from "./pages/Home"
 import About from "./pages/About"
-import RootLayout from "./layouts/RootLayout";
-import HelpLayout from "./layouts/HelpLayout";
 import Faq from "./pages/help/Faq"
 import Contact, { contactAction } from "./pages/help/Contact"
-import NotFoud from "./pages/NotFoud";
-import CareersLayout from "./layouts/CareersLayout"
 import Careers, { carrersLoader } from "./pages/careers/Careers"
+import NotFoud from "./pages/NotFoud";
+
+import RootLayout from "./layouts/RootLayout";
+import HelpLayout from "./layouts/HelpLayout";
+import CareersLayout from "./layouts/CareersLayout"
 import CareerDetails, { careerDetailsLoader } from "./pages/careers/CareerDetails"
 import CareersError from "./pages/careers/CareersError";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/React-Router-v6" element={<RootLayout />}>
-      <Route path="/React-Router-v6" element={<Home />} />
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
       <Route path="about" element={<About />} />
 
       <Route path="help" element={<HelpLayout />}>
