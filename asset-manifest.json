@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/CometChat/static/css/main.a03fb3ed.css",
-    "main.js": "/CometChat/static/js/main.65208e77.js",
+    "main.js": "/CometChat/static/js/main.838b89bd.js",
     "index.html": "/CometChat/index.html",
     "main.a03fb3ed.css.map": "/CometChat/static/css/main.a03fb3ed.css.map",
-    "main.65208e77.js.map": "/CometChat/static/js/main.65208e77.js.map"
+    "main.838b89bd.js.map": "/CometChat/static/js/main.838b89bd.js.map"
   },
   "entrypoints": [
     "static/css/main.a03fb3ed.css",
-    "static/js/main.65208e77.js"
+    "static/js/main.838b89bd.js"
   ]
 }
