@@ -14,7 +14,6 @@ import ProductLayout from "./layouts/ProductLayout";
 import UIKits from "./pages/product/UIKits";
 import Error from "./pages/Error";
 import Undone from "./pages/Undone";
-import ScrollToTop from "./ScrollToTop";
 
 
 const router = createBrowserRouter(
@@ -29,8 +28,10 @@ const router = createBrowserRouter(
         </Route>
         <Route path="page-developing" element={ <Undone /> }></Route>
       </Route>
-  )
-)
+  ),
+  {
+    basename: "/CometChat",
+});
 
 
 function App() {
