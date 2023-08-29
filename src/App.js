@@ -30,7 +30,7 @@ const router = createBrowserRouter(
       </Route>
   ),
   {
-    basename: "/CometChat/"
+    basename: "/CometChat",
 });
 
 
