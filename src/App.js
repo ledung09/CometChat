@@ -5,45 +5,30 @@ import {
   createBrowserRouter, 
   createRoutesFromElements, 
   RouterProvider} from "react-router-dom";
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Faq from "./pages/help/Faq"
-import Contact, { contactAction } from "./pages/help/Contact"
-import Careers, { carrersLoader } from "./pages/careers/Careers"
-import NotFoud from "./pages/NotFoud";
 
 import RootLayout from "./layouts/RootLayout";
-import HelpLayout from "./layouts/HelpLayout";
-import CareersLayout from "./layouts/CareersLayout"
-import CareerDetails, { careerDetailsLoader } from "./pages/careers/CareerDetails"
-import CareersError from "./pages/careers/CareersError";
+
+import Home from "./pages/home/Home";
+import Product from "./pages/product/PrOv";
+import ProductLayout from "./layouts/ProductLayout";
+import UIKits from "./pages/product/UIKits";
+import Error from "./pages/Error";
+import Undone from "./pages/Undone";
+import ScrollToTop from "./ScrollToTop";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-
-      <Route path="help" element={<HelpLayout />}>
-        <Route path="faq" element={<Faq />} />
-        <Route path="contact" element={<Contact />} action={contactAction}/>
+      <Route path='/' element={ <RootLayout /> } errorElement={<Error />}>
+        <Route index element={ <Home /> }></Route>
+        <Route path="pro" element={ <ProductLayout /> }>
+          <Route index element={ <Product /> }></Route>
+          <Route path="ui-kits" element={ <UIKits /> }></Route>
+          <Route path="chat-sdks-api" element={ <Undone /> }></Route>
+          <Route path="extensions" element={ <Undone /> }></Route>
+        </Route>
+        <Route path="page-developing" element={ <Undone /> }></Route>
       </Route>
-
-      <Route path="careers" element={<CareersLayout />} errorElement={<CareersError />}>
-        <Route 
-          index 
-          element={<Careers />} 
-          loader={carrersLoader}
-        />
-        <Route 
-          path=":id"
-          element={<CareerDetails />}
-          loader={careerDetailsLoader}
-        />
-      </Route>
-
-      <Route path="*" element={<NotFoud />} />
-    </Route>
   )
 )
 

@@ -1,0 +1,52 @@
+.error-page {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.er-pg-r2 {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 46px;
+}
+
+.er-pg-r3 {
+  color: #010204;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+
+.er-pg-r4 {
+  color: #7f838b !important;
+  text-decoration: none;
+}
+
+.undone-pg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.undone-pg img {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  object-fit: contain;
+  width: 200px;
+}
+
+.undone-pg-r2 {
+  font-size: 1.25em;
+  line-height: 1.4;
+  letter-spacing: -.2px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
