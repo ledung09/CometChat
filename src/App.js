@@ -28,8 +28,10 @@ const router = createBrowserRouter(
         </Route>
         <Route path="page-developing" element={ <Undone /> }></Route>
       </Route>
-  )
-);
+  ),
+  {
+    basename: "/CometChat/",
+});
 
 
 function App() {
