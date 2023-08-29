@@ -28,12 +28,12 @@ export default function RootLayout() {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="page-developing">Dating</Dropdown.Item>
-              <Dropdown.Item href="page-developing">Edu-Tech</Dropdown.Item>
-              <Dropdown.Item href="page-developing">Live Streaming and Events</Dropdown.Item>
-              <Dropdown.Item href="page-developing">Marketplace</Dropdown.Item>
-              <Dropdown.Item href="page-developing">On Demand</Dropdown.Item>
-              <Dropdown.Item href="page-developing">Social Community</Dropdown.Item>
+              <Dropdown.Item>Dating</Dropdown.Item>
+              <Dropdown.Item>Edu-Tech</Dropdown.Item>
+              <Dropdown.Item>Live Streaming and Events</Dropdown.Item>
+              <Dropdown.Item>Marketplace</Dropdown.Item>
+              <Dropdown.Item>On Demand</Dropdown.Item>
+              <Dropdown.Item>Social Community</Dropdown.Item>
             
             </Dropdown.Menu>
           </Dropdown>
@@ -49,12 +49,12 @@ export default function RootLayout() {
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
-              <Dropdown.Item href="page-developing">Documentation</Dropdown.Item>
-              <Dropdown.Item href="page-developing">Tutorials</Dropdown.Item>
-              <Dropdown.Item href="page-developing">Blog</Dropdown.Item>
-              <Dropdown.Item href="page-developing">Product Updates</Dropdown.Item>
-              <Dropdown.Item href="page-developing">UI Kits</Dropdown.Item>
-              <Dropdown.Item href="page-developing">SDKs and APIs</Dropdown.Item>
+              <Dropdown.Item>Documentation</Dropdown.Item>
+              <Dropdown.Item>Tutorials</Dropdown.Item>
+              <Dropdown.Item>Blog</Dropdown.Item>
+              <Dropdown.Item>Product Updates</Dropdown.Item>
+              <Dropdown.Item>UI Kits</Dropdown.Item>
+              <Dropdown.Item>SDKs and APIs</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
