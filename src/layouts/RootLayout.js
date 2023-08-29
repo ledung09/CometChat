@@ -1,8 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown';
 
-
-
 export default function RootLayout() {  
   return (
     <div className="root-layout">
@@ -38,10 +36,8 @@ export default function RootLayout() {
             </Dropdown.Menu>
           </Dropdown>
 
-
           <NavLink to='page-developing' className="header--ele">Pricing</NavLink>
 
-          
           <Dropdown>
             <Dropdown.Toggle className="header--ele">
               Developers
@@ -57,7 +53,6 @@ export default function RootLayout() {
               <Dropdown.Item>SDKs and APIs</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-
 
           <NavLink to='page-developing' className="header--ele">Help Center</NavLink>
 
@@ -135,8 +130,7 @@ export default function RootLayout() {
           </div>
           <div className="ft-r3"> 2023 © CometChat — <span className="pink--txt">Terms</span> & <span className="pink--txt">Privacy Policy</span></div>
         </div>
-      </footer>
-    
+      </footer>    
     </div>
   )
 }

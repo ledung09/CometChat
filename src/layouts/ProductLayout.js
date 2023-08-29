@@ -6,10 +6,7 @@ import Home7 from "../pages/home/Home7";
 import { useState } from "react";
 
 export default function ProductLayout() {
-
   const [pr, setPr] = useState(0);
-
-
 
   const updatePr = (pos) => {
     setPr(pos);
@@ -20,11 +17,11 @@ export default function ProductLayout() {
       spanTag.style.fontWeight = '400';
       spanTag.style.borderBottom = 'none'
     })  
-
     spanTags[pos].style.color = '#6929CA';
     spanTags[pos].style.fontWeight = '600';
     spanTags[pos].style.borderBottom = '1px solid #6929ca'
   }
+
   return (
     <div className="productLayout">
       <div className="pro--subheader">
@@ -47,7 +44,6 @@ export default function ProductLayout() {
             className="pro--subheader-ele"
             to='chat-sdks-api'
             onClick={() => {updatePr(2)}}
-
           >
             <span>Chat SDKs</span>
           </NavLink>
